@@ -1,7 +1,17 @@
-*{
-    max-width: 430px;;
+@font-face {
+    font-family:"gotham" ;
+    src: url(./GothamBook.ttf);
+}
+@font-face {
+    font-family: "gothambold";
+    src: url(./GothamBold.ttf);
+}
+body{
+    max-width: 430px;
     background-color: #000000;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 .hero{
     display: flex;
@@ -15,8 +25,7 @@
     display: flex;
     justify-content: space-between;
     font-family: Poppins;
-    font-weight: 700;
-    height: 120px;
+    font-weight: 700;   
     width: 100%;
     align-items: center;
 }
@@ -30,12 +39,6 @@
     }
 .nav-logo-1{
     fill: #ffffff;
-}
-.menu-svg {
-        /* Add your CSS rules here */
-        /* width: 50px;
-        height: 50px;  */
-        fill: #de1313;
 }
 .menu-svg-1{
     stroke: #ffffff;
@@ -80,19 +83,18 @@ letter-spacing: -0.03em;
 }
 .text-2{
     font-family: Anton;
+    width: 100%;
     background: linear-gradient(90deg, #FA709A 0%, #FEE140 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
-    line-height: 130%;
     /* padding-top: 10px; */
     font-weight: 300px;
     line-height: 57px;
     font-size: 64px;
     box-sizing: border-box;
     display: flex;
-    justify-content: center;
+    justify-content: center;    
 }
 .intro-buttons{
     display: flex;
@@ -130,16 +132,16 @@ letter-spacing: -0.03em;
     display: flex;
     color: #f0f8ff;
     align-items: center;
-    font-family: 'Hind', sans-serif;
+    font-family: "gotham";
     font-size: 20px;
-    width: 366px;
+    font-weight: 400;
     background-color: #292929;
     padding: 16px 68.5px 16px 48.5px;
     order: 1;
     align-self: stretch;
     flex-grow: 0;
     flex: none;
-    margi
+    cursor: pointer;
 }
 .text-download{
     position: absolute;
@@ -150,6 +152,272 @@ letter-spacing: -0.03em;
     background-color: #292929;
 
 }
+.rates-div-whole{
+    display: flex;
+    justify-content: center;
+}
+.rates{
+    display: grid;
+    row-gap: 144px;
+    color: #C8FEC7;
+    border: 1px solid #808080;
+    height: 821px;
+    width: 386px;
+    border-radius: 29px;
+    padding: 82px 0;
+    font-family: Anton;
+    margin-top: 90px;
+    text-align: center;
+    justify-content: center;
+}
+.rates-1{
+    font-size: 64px;
+    letter-spacing: 0em;
+}
+.rates-1-stat{
+    font-family: Anton;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.rates-1-info{
+    font-family: Anton;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.portfolio{
+    margin-top:150px;
+    margin-bottom: 140px;
+
+}
+
+div.portfolio-header{
+    color: #ffffff;
+    font-family:Anton ;
+    line-height: 64px;
+    font-size: 64px;
+    margin-left: 22px;
+    margin-bottom: 36px;
+}
+/* .mi-portal{
+    height: 1766px;
+    width: 386px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#6a1aff ; 
+    border: 1px solid #737373; 
+} */
+.mi-portal {
+    height: 1766px;
+    /* width: 386px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+.mi-portal-1{
+    height:419px;
+    /* margin-top: 36px;    */
+    border: 1px solid #737373;
+    border-radius: 11px;
+    background-color: #0B0B0B;
+}
+.portal-svg{
+    height: 200px;
+    width: 326px;
+    border-radius: 10px;
+    margin: 30px 30px 23px 30px;
+    margin-bottom: 23px;
+
+}
+
+rect{
+    stroke:#ffffff;
+} 
+.portal-info{
+    padding-left: 30px;
+    height: 73px;
+    font-family: Arial;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 23px;
+    box-sizing: border-box;
+}
+.portal-heading{
+    color: #f0f8ff;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 21px;
+}
+.portal-tags{
+    border: 1px solid #784DC7;
+    border-radius: 15px;
+    line-height: 14px;
+    font-size:14px;
+    padding: 3px;
+    color: #784DC7;
+    background-color: #e3d4ff;
+    font-family: "gotham";
+}
+
+.portal-button{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: #f0f8ff;
+    align-items: center;
+    font-family: "gotham";
+    font-size: 16px;
+    padding: 12px 95px;
+    background-color: #292929;
+    order: 1;
+    flex-grow: 0;
+    flex: none;
+    /* padding: 12px 24px; */
+    margin: 23px 30px 30px 30px;
+    margin-bottom: 30px;
+}
+.portal-button:hover{
+    color: #f0f8ff;
+    font-size: 16px;
+
+    background-color: #554d4d;
+    cursor: pointer;
+}
+.skills-whole{
+    padding: 0 22px;
+    margin-bottom: 140px;
+}
+.skills-heading{
+    color: #ffffff;
+    padding-left: 22px;
+    font-size: 64px;
+    margin-top: 140px;
+    margin-bottom: 50px;
+    font-family: anton;
+}
+.skills-part{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.skills-part-1{
+    border: 1px solid #ffffff;
+    border-radius: 11px;
+}
+/* .skills-svg{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 88px 20px 78px;
+}
+.skills-percentage{
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+    fill:#ffffff;
+    color: #ffffff;
+} */
+
+.skills-svg{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 88px 20px 78px;
+
+}
+.skills-percentage{
+    position: absolute;
+    color: #ffffff;
+    font-family: "gothambold";
+    font-weight: 500;
+    letter-spacing: -0.05em;
+    font-size: 36px;
+}
+
+.skills-part-1-heading{
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: 500;
+    font-family: "gothambold";
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: "gotham";
+    text-align: center;
+}
+.skills-info{
+    font-family: "gotham";
+    padding: 0 50px 60px 40px ;
+    color: #ffffff;
+}
+
+.client-review{
+    width: 100%;
+    background-image: url(./images/first.png);
+    background-repeat: no-repeat;
+    font-family: poppins;
+    color: #ffffff;
+    font-size: 24px;
+
+}
+.client-name{
+    font-weight: 600;
+    text-align: center;
+    padding: 97px 0 60px 0;
+    width: 100%;
+}
+.review-details{
+    font-style: italic;
+    font-weight: 700;
+    padding: 0 22px;
+    line-height: 25.2px;
+    font-size: 24px;
+    letter-spacing: -0.05em;
+
+}
+.review-svg{
+    padding-top: 60px;
+    padding-bottom: 97px;
+}
+
+
+.about-me{
+    margin-bottom: 160px;
+}
+.about-heading{
+    color: #ffffff;
+    font-family:Anton ;
+    font-size: 64px;
+    font-weight: 400;
+    padding: 140px 22px 0 22px;
+}
+.about-details{
+    color: #ffffff;
+    font-family: "gothambold";
+    padding: 50px 35.21px 50px 22px;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    display: flex;
+    align-items: center;
+}
+.about-images{
+    padding: 0 22px;
+}
+.image-boy{
+    width: 100%;
+}
+
+
+
 .mode-change{
     border: 1px gray;
     color: #f0f8ff;
@@ -159,4 +427,58 @@ letter-spacing: -0.03em;
     margin: 20px;
 }
 
+.footer-page{
+    background-color: #292929;
+    width: 430px;
+    height: 300px;
+    margin: 56.5px 0 36.5px 0;
+    box-sizing: border-box;
+}
+.footer-svg{
+    background-color: #292929;
+    fill: #f0f8ff;
+}
+.footer-svg-1{
+    fill: #ffffff;
+}
+.footer-tian-logo{
+    font-size: 33.75px;
+    line-height: 33.75px;
+    padding: 56.5px 0 36.5px 22px;
+    font-family: Poppins;
+    font-weight: 700;
+    color: #ffffff;
+}
 
+.footer-options{
+    display: flex;
+    font-family: "gotham";
+    color: #f0f8ff;
+    /* width: 360px; */
+    padding-left: 35px;
+    background-color: #292929;
+    padding-right: 35px;
+    justify-content: center;
+}
+.footer-options-1{
+    display: flex;
+    font-family: "gotham";
+    color: #f0f8ff;
+    background-color: #292929;
+    width: 360px;
+    justify-content: center;
+}
+
+
+.footer-tian-logo{
+    display: flex;
+    align-items: center;
+    gap:5px;
+    justify-content: center;
+    font-size: 33.75px;
+    line-height: 33.75px;
+    padding: 118px 0px 41.97px 0;
+    font-family: Poppins;
+    font-weight: 700;
+    color: #ffffff;
+}
