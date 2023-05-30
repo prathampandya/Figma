@@ -416,6 +416,41 @@ rect{
     width: 100%;
 }
 
+.creator-corner{
+    position: relative;
+    width: 89.30%;
+    margin: 0 auto;
+    border: 1px solid #000000;
+    border-radius: 15px;
+}
+.creator-says{
+    font-size: 12px;
+    width: 48.13%;
+    letter-spacing: -0.05em;
+    font-weight: 300;
+    padding: 6.046% 11.45% 6.046% 34.45%;
+    line-height: 100%;
+    letter-spacing: -0.05em;
+    text-transform: capitalize;
+}
+.creator-svg-1{
+    position: absolute;
+    right: 67.44%;
+    bottom: 0;
+}
+.creator-svg-2{
+    position: absolute;
+    top:0;
+    right:0;
+}
+.creator-corner{
+    color: #ffffff;
+    background-color: #A87FF3 ;
+    font-family: "gotham";
+    font-size: 12px;
+    font-weight: 400;
+
+}
 
 
 .mode-change{
