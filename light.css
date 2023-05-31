@@ -409,8 +409,27 @@ div.portfolio-header{
     font-size: 22px;
     font-weight: 700;
     letter-spacing: -0.05em;
-    display: flex;
     align-items: center;
+}
+.details-gradient-1{
+    background: -webkit-linear-gradient(right, #FA709A 0%, #FEE140 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.details-gradient-2{
+    background: -webkit-linear-gradient(right, #84FAB0 0%, #8FD3F4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.details-gradient-3{
+    background: -webkit-linear-gradient(right, #E0C3FC 0%, #8EC5FC 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.details-gradient-4{
+    background: -webkit-linear-gradient(left ,#FFE76A 15%, #65C8FF 67%, #FF0000 15%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .about-images{
     padding: 0 22px;
@@ -423,8 +442,9 @@ div.portfolio-header{
     position: relative;
     width: 89.30%;
     margin: 0 auto;
-    border: 1px solid white;
+    border: 1px solid transparent;
     border-radius: 15px;
+    margin-top: 115px;
 }
 .creator-says{
     font-size: 12px;
@@ -467,7 +487,7 @@ div.portfolio-header{
     background-color: #292929;
     width: 430px;
     height: 300px;
-    margin: 56.5px 0 36.5px 0;
+    margin: -70.5px 0 36.5px 0;
     box-sizing: border-box;
 }
 .footer-svg{
